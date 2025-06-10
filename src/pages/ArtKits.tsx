@@ -6,35 +6,35 @@ const ArtKits = () => {
   const kits = [
     {
       id: 1,
-      name: "Watercolor Starter Kit",
-      description: "Perfect for beginners exploring the fluidity of watercolors. Includes paints, brushes, and watercolor paper to get you started on your artistic journey.",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80",
+      name: "Ocean-Inspired Mosaic Kit 1",
+      description: "Everything you need to create your first mosaic artwork. Inspired by Arlene's coastal designs, this kit brings the beauty of Amanzimtoti to your home.",
+      image: "/images/shell.jpg",
       level: "Beginner",
-      includes: ["12 watercolor paints", "3 premium brushes", "Watercolor paper pad", "Instruction guide"]
+      includes: ["Pre-cut glass tiles", "Wooden base", "Adhesive", "Grout", "Step-by-step tutorial"]
     },
     {
       id: 2,
-      name: "Mini Mosaic Kit",
+      name: "Ocean-Inspired Mosaic Kit 2",
       description: "Everything you need to create your first mosaic artwork. Inspired by Arlene's coastal designs, this kit brings the beauty of Amanzimtoti to your home.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      image: "/images/starfish.jpg",
       level: "Beginner",
       includes: ["Pre-cut glass tiles", "Wooden base", "Adhesive", "Grout", "Step-by-step tutorial"]
     },
     {
       id: 3,
-      name: "Nature Sketching Kit",
-      description: "Capture the beauty of nature like Arlene does. This kit is perfect for outdoor sketching sessions along the coast or in your garden.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
+      name: "Ocean-Inspired Mosaic Kit 3",
+      description: "Capture the beauty of the ocean like Arlene does. This kit includes everything you need to start your mosaic journey.",
+      image: "/images/sandals.jpg",
       level: "Beginner",
-      includes: ["Sketching pencils", "Portable sketchbook", "Blending tools", "Outdoor carrying case"]
+      includes: ["Pre-cut glass tiles", "Wooden base", "Adhesive", "Grout", "Step-by-step tutorial"]
     },
     {
       id: 4,
-      name: "Ocean-Inspired Art Kit",
+      name: "Ocean-Inspired Mosaic Kit 4",
       description: "Dive into the blues and greens of the ocean with this comprehensive kit. Create artwork that captures the essence of coastal South Africa.",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+      image: "/images/seahorse.jpg",
       level: "Beginner",
-      includes: ["Ocean-themed color palette", "Canvas boards", "Brushes & tools", "Texture mediums", "Inspiration guide"]
+      includes: ["Pre-cut glass tiles", "Wooden base", "Adhesive", "Grout", "Step-by-step tutorial"]
     }
   ];
 
@@ -54,10 +54,11 @@ const ArtKits = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 bg-clip-text text-transparent">
-            Art Kits
+            Starter Mosaic Kits
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Start your artistic journey with our carefully curated beginner-friendly art kits. Each kit is designed to help you explore different mediums and techniques.
+            Start your artistic journey with our carefully curated beginner-friendly mosaic art kits. 
+            Each kit is designed to help you explore different mediums and techniques.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 mx-auto rounded-full mt-8"></div>
         </div>
@@ -111,7 +112,7 @@ const ArtKits = () => {
                   </div>
                   
                   <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-lg hover:scale-105 transition-all duration-300 hover:from-cyan-600 hover:to-teal-600 font-medium">
-                    Get Started
+                    Release Date August 2025
                   </button>
                 </div>
               </div>

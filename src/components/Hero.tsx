@@ -26,16 +26,19 @@ const Hero = () => {
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-blue-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
-          Arlene
+          Arlene's
         </h1>
         
         <h2 className="text-2xl md:text-4xl font-light mb-8 text-gray-700 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          Mosaic Artist & Ocean Soul
+          Aspiring Mosaic Artist , Ocean Soul , Loving Mom
         </h2>
         
         <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '1s' }}>
-          Creating beautiful mosaic art inspired by the coastal beauty of Amanzimtoti, South Africa. 
-          Where ocean meets creativity, and art brings hearts together.
+          This is my creative space, where I share my passion for mosaic art and the joy it brings to my life. 
+          I don’t create to sell, every piece is made from the heart, simply for the love of it.
+          Creating beautiful mosaic art & gifting them to friends and loved ones, brings me inner piece and warmth.
+          <br />
+          Inspired by the coastal beauty of Amanzimtoti, South Africa. 
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in" style={{ animationDelay: '1.5s' }}>
@@ -43,7 +46,7 @@ const Hero = () => {
             to="/showcase-gallery"
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-teal-600"
           >
-            Explore My Art
+            Inspiration Gallery
           </Link>
           <Link 
             to="#contact"
@@ -59,13 +62,13 @@ const Hero = () => {
             to="/art-supplies"
             className="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-gray-700 hover:bg-white/30 transition-all duration-300 hover:scale-105"
           >
-            Art Supplies
+            Mosaic Art Supplies
           </Link>
           <Link 
             to="/art-kits"
             className="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-gray-700 hover:bg-white/30 transition-all duration-300 hover:scale-105"
           >
-            Art Kits
+            Mosaic Art Starter Kits
           </Link>
         </div>
       </div>

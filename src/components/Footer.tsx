@@ -36,22 +36,22 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/showcase-gallery" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Showcase Gallery
+                  Inspiration Gallery
                 </Link>
               </li>
               <li>
                 <Link to="/art-supplies" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Art Supplies
+                  Mosaic Art Supplies
                 </Link>
               </li>
               <li>
                 <Link to="/art-kits" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Art Kits
+                  Starter Mosaic Art Kits
                 </Link>
               </li>
               <li>
                 <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Contact
+                  Contact Arlene
                 </a>
               </li>
             </ul>
@@ -67,11 +67,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-teal-400" />
-                <span className="text-gray-300">arlene@mosaicart.co.za</span>
+                <span className="text-gray-300">xxxx@willconfirm.lol</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cyan-400" />
-                <span className="text-gray-300">+27 (0)31 000 0000</span>
+                <span className="text-gray-300">+27 (0)31 xxx 0xxx</span>
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Arlene Mosaic Art. All rights reserved. | Crafted with passion in Amanzimtoti
+            © 2025 Arlene Mosaic Art. All rights reserved. | Crafted with passion in Amanzimtoti
           </p>
         </div>
       </div>

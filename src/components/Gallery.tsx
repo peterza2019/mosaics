@@ -6,44 +6,44 @@ const Gallery = () => {
   const artworks = [
     {
       id: 1,
-      title: "Ocean Waves",
+      title: "Boat at Sea",
       description: "Inspired by the eternal dance of waves against the Amanzimtoti shore",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+      image: "/images/boat at sea.jpg",
       category: "Ocean Series"
     },
     {
       id: 2,
-      title: "Coastal Sunrise",
+      title: "Fish",
       description: "Capturing the golden hour as it paints the South African coastline",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fish.jpg",
       category: "Nature Series"
     },
     {
       id: 3,
-      title: "Tidal Pools",
+      title: "Sea Horse",
       description: "The intricate beauty found in nature's small sanctuaries",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      image: "/images/seahorse.jpg",
       category: "Ocean Series"
     },
     {
       id: 4,
-      title: "African Blooms",
+      title: "Light House",
       description: "Celebrating the vibrant flora of our beautiful continent",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80",
+      image: "/images/lighthouse.jpg",
       category: "Nature Series"
     },
     {
       id: 5,
-      title: "Forest Light",
+      title: "Star Fish",
       description: "Where sunlight meets shadow in perfect harmony",
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80",
+      image: "/images/starfish.jpg",
       category: "Nature Series"
     },
     {
       id: 6,
-      title: "Coral Dreams",
+      title: "Dolphin Mirror",
       description: "An underwater fantasy in mosaic form",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+      image: "/images/mirror.jpg",
       category: "Ocean Series"
     }
   ];
@@ -53,10 +53,11 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Gallery
+            Ideas & Inspirations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore a collection of mosaic artworks inspired by the ocean, nature, and the vibrant life of coastal South Africa
+            Explore a collection of mosaic artworks inspired by the ocean, nature, and the beauty of life. 
+            Each piece tells a story, capturing the essence of our surroundings through vibrant colors and intricate designs.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full mt-8"></div>
         </div>

@@ -6,44 +6,44 @@ const ShowcaseGallery = () => {
   const artworks = [
     {
       id: 1,
-      title: "Ocean Waves Mosaic",
+      title: "Mermaid",
       description: "A mesmerizing mosaic capturing the eternal dance of waves against the Amanzimtoti shore, using blues and whites to represent the endless ocean.",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+      image: "/images/mermaid.jpg",
       category: "Abstract"
     },
     {
       id: 2,
       title: "Coastal Sunrise",
       description: "This piece captures the golden hour as it paints the South African coastline, with warm oranges and soft yellows creating a peaceful morning scene.",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
+      image: "/images/seahorse2.jpg",
       category: "Nature"
     },
     {
       id: 3,
-      title: "Tidal Pool Reflection",
+      title: "Sea shell Mosaic",
       description: "Inspired by the intricate beauty found in nature's small sanctuaries, this mosaic celebrates the delicate ecosystem of coastal tidal pools.",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      image: "/images/shell.jpg",
       category: "Nature"
     },
     {
       id: 4,
-      title: "African Blooms",
+      title: "Sea Sandals",
       description: "A vibrant celebration of South African flora, featuring the rich colors and textures of indigenous flowers in intricate mosaic detail.",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80",
+      image: "/images/sandals.jpg",
       category: "Nature"
     },
     {
       id: 5,
       title: "Geometric Harmony",
       description: "A minimalist approach to mosaic art, exploring the beauty of simple geometric patterns and the interplay of light and shadow.",
-      image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=800&q=80",
+      image: "/images/lighthouse4.jpg",
       category: "Minimalism"
     },
     {
       id: 6,
-      title: "Digital Art Inspiration",
-      description: "A modern take on traditional mosaic art, where digital tools meet handcrafted techniques to create contemporary masterpieces.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      title: "Sea Life Symphony",
+      description: "An underwater fantasy in mosaic form, this piece brings together various sea creatures in a harmonious blend of colors and textures.",
+      image: "/images/sealife.jpg",
       category: "Abstract"
     }
   ];

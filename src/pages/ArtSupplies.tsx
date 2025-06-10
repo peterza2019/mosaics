@@ -8,35 +8,35 @@ const ArtSupplies = () => {
       id: 1,
       name: "Professional Sketchbook Set",
       description: "High-quality sketchbooks with various paper textures, perfect for planning your mosaic designs and sketching inspiration from nature.",
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80",
+      image: "/images/4.webp",
       price: "From R450"
     },
     {
       id: 2,
       name: "Mosaic Tile Collection",
       description: "Curated collection of glass and ceramic tiles in ocean-inspired colors. Perfect for creating your own coastal masterpieces.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      price: "From R320"
+      image: "/images/4.webp",
+      price: "From R550"
     },
     {
       id: 3,
       name: "Artist Brush Set",
       description: "Premium brushes for detail work and grout application. Essential tools for adding finishing touches to your mosaic creations.",
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80",
-      price: "From R280"
+      image: "/images/4.webp",
+      price: "From R450"
     },
     {
       id: 4,
       name: "Adhesive & Grout Kit",
       description: "Professional-grade adhesives and grouts specially selected for mosaic work. Includes tools for proper application and finishing.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
-      price: "From R180"
+      image: "/images/4.webp",
+      price: "From R650"
     },
     {
       id: 5,
       name: "Cutting Tools Set",
       description: "Precision tools for cutting and shaping tiles. Includes nippers, score-and-break tools, and safety equipment for your mosaic projects.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      image: "/images/4.webp",
       price: "From R520"
     }
   ];
@@ -57,7 +57,7 @@ const ArtSupplies = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            Art Supplies
+            Mosaic Art Supplies
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover the essential tools and materials that bring mosaic art to life. Each item has been carefully selected to help you create beautiful, lasting artwork.
@@ -97,7 +97,7 @@ const ArtSupplies = () => {
                     {supply.description}
                   </p>
                   <button className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-lg hover:scale-105 transition-all duration-300 hover:from-teal-600 hover:to-blue-600">
-                    <span>View More</span>
+                    <span>Available August 2025 </span>
                     <ExternalLink className="w-4 h-4" />
                   </button>
                 </div>

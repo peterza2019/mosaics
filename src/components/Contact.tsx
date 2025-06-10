@@ -10,7 +10,7 @@ const Contact = () => {
             Let's Create Together
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Whether you're interested in commissioning a piece, learning about mosaic art, 
+            Whether you're interested learning about mosaic art, need help with a project,
             or simply want to connect, I'd love to hear from you!
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full mt-8"></div>
@@ -39,7 +39,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Email</h4>
-                    <p className="text-gray-600">arlene@mosaicart.co.za</p>
+                    <p className="text-gray-600">xxxx@xxxxx.lol</p>
                   </div>
                 </div>
                 
@@ -49,7 +49,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+27 (0)31 000 0000</p>
+                    <p className="text-gray-600">+27 (0)31 xxx 0xxx</p>
                   </div>
                 </div>
                 
@@ -66,24 +66,34 @@ const Contact = () => {
             </div>
             
             <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">What I Offer</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Comming Soon</h3>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span>Custom mosaic commissions</span>
+
+                  <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                  <span>Free Monthly Tips & Tricks - Comming Soon</span>
                 </li>
+
+                 <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                  <span>Mosaic Art Supplies - August 2025</span>
+                </li>
+                
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                  <span>Mosaic Art Starter Kits - August 2025</span>
+                </li>
+               
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                  <span>Mosaic art workshops</span>
+                  <span>Mosaic Art Workshops - 2026</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                  <span>Art therapy sessions</span>
+                  <span>Mosaic Art Therapy - 2026</span>
                 </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span>Community art projects</span>
-                </li>
+               
+               
               </ul>
             </div>
           </div>
