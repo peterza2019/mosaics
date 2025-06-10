@@ -1,5 +1,6 @@
 
 import { Heart, Waves, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -34,19 +35,19 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Gallery
-                </a>
+                <Link to="/showcase-gallery" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
+                  Showcase Gallery
+                </Link>
               </li>
               <li>
-                <a href="#workshops" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Workshops
-                </a>
+                <Link to="/art-supplies" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
+                  Art Supplies
+                </Link>
               </li>
               <li>
-                <a href="#commissions" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
-                  Commissions
-                </a>
+                <Link to="/art-kits" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
+                  Art Kits
+                </Link>
               </li>
               <li>
                 <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">

@@ -1,5 +1,6 @@
 
 import { Waves, Palette, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -38,12 +39,34 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in" style={{ animationDelay: '1.5s' }}>
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-teal-600">
+          <Link 
+            to="/showcase-gallery"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-teal-600"
+          >
             Explore My Art
-          </button>
-          <button className="px-8 py-4 bg-white/30 backdrop-blur-sm border-2 border-white/50 text-gray-700 rounded-full text-lg font-medium hover:scale-105 hover:bg-white/40 transition-all duration-300">
+          </Link>
+          <Link 
+            to="#contact"
+            className="px-8 py-4 bg-white/30 backdrop-blur-sm border-2 border-white/50 text-gray-700 rounded-full text-lg font-medium hover:scale-105 hover:bg-white/40 transition-all duration-300"
+          >
             Get In Touch
-          </button>
+          </Link>
+        </div>
+        
+        {/* Quick Navigation Links */}
+        <div className="mt-16 flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '2s' }}>
+          <Link 
+            to="/art-supplies"
+            className="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-gray-700 hover:bg-white/30 transition-all duration-300 hover:scale-105"
+          >
+            Art Supplies
+          </Link>
+          <Link 
+            to="/art-kits"
+            className="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-gray-700 hover:bg-white/30 transition-all duration-300 hover:scale-105"
+          >
+            Art Kits
+          </Link>
         </div>
       </div>
       

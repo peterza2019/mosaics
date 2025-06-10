@@ -1,5 +1,6 @@
 
 import { Eye, Heart, Share2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   const artworks = [
@@ -109,9 +110,12 @@ const Gallery = () => {
         </div>
         
         <div className="text-center mt-16">
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-teal-600">
+          <Link 
+            to="/showcase-gallery"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-teal-600"
+          >
             View Full Gallery
-          </button>
+          </Link>
         </div>
       </div>
     </section>
