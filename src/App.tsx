@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import ShowcaseGallery from "./pages/ShowcaseGallery";
 import ArtSupplies from "./pages/ArtSupplies";
 import ArtKits from "./pages/ArtKits";
+import FAQ from "./pages/FAQ";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,9 @@ const App = () => (
           <Route path="/showcase-gallery" element={<ShowcaseGallery />} />
           <Route path="/art-supplies" element={<ArtSupplies />} />
           <Route path="/art-kits" element={<ArtKits />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/blog" element={<Blog />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

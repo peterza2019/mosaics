@@ -49,6 +49,19 @@ const Footer = () => {
                   Starter Mosaic Art Kits
                 </Link>
               </li>
+
+                  <li>
+                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
+                  Blog
+                </Link>
+              </li>
+
+               <li>
+                <Link to="/faq" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
+                  FAQ
+                </Link>
+              </li>
+              
               <li>
                 <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 hover:underline">
                   Contact Arlene
