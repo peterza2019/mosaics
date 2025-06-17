@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://arlenes.co.za/</loc>
+    <lastmod>2025-06-17</lastmod> <!-- IMPORTANT: Change this to today's date, or the last date you made significant content changes. Format: YYYY-MM-DD -->
+    <changefreq>daily</changefreq> <!-- How frequently the page is likely to change. Options: always, hourly, daily, weekly, monthly, yearly, never -->
+    <priority>1.0</priority> <!-- Priority of this URL relative to other URLs on your site. 0.0 to 1.0. Homepage is usually 1.0 -->
+  </url>
+  <!-- If you add more distinct pages/routes in the future, add more <url> blocks for them here -->
+  <!-- For example:
+  <url>
+    <loc>https://arlenes.co.za/gallery</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+</urlset>
