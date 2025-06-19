@@ -1,4 +1,6 @@
-
+// src/pages/FAQ.tsx
+import React from 'react'; // Good practice
+import { Helmet } from 'react-helmet-async'; // <--- 1. Import Helmet
 import { Waves, HelpCircle, Sparkles } from 'lucide-react';
 import {
   Accordion,
@@ -9,6 +11,13 @@ import {
 import { Link } from 'react-router-dom';
 
 const FAQ = () => {
+  // --- SEO Metadata ---
+  const pageTitle = "FAQ - Mosaic Art Questions | Arlene's Art"; // <--- Be specific
+  const pageDescription = "Find answers to frequently asked questions about mosaic art, Arlene's creative process, art supplies, workshops, and getting started with your own mosaic projects in Amanzimtoti, South Africa.";
+  const canonicalUrl = "https://www.arlenes.co.za/faq"; // <--- !! IMPORTANT: Replace YOURDOMAIN.com with your actual domain
+  // Optional: An image for social sharing, perhaps a general branding image or a workshop photo
+  //const ogImageUrl = "https://www.YOURDOMAIN.com/images/faq-og-image.jpg"; // <--- Replace with an actual image URL if you have one
+
   const faqs = [
     {
       id: "what-is-mosaic-art",
@@ -78,12 +87,33 @@ const FAQ = () => {
 
   return (
     <>
-      {/* SEO Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      
+      <Helmet> {/* <--- 2. Use the Helmet component */}
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        {/* <meta property="og:image" content={ogImageUrl} /> */}
+
+        {/* Twitter Card (optional) */}
+        {/* <meta property="twitter:card" content="summary_large_image" /> */}
+        {/* <meta property="twitter:url" content={canonicalUrl} /> */}
+        {/* <meta property="twitter:title" content={pageTitle} /> */}
+        {/* <meta property="twitter:description" content={pageDescription} /> */}
+        {/* <meta property="twitter:image" content={ogImageUrl} /> */}
+
+        {/* SEO Schema Markup for FAQPage (moved inside Helmet for better organization, though your original placement is also fine) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </Helmet>
+
+      {/* Your existing component structure remains the same below */}
       <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-teal-50">
         {/* Navigation */}
         <nav className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
@@ -95,7 +125,7 @@ const FAQ = () => {
                 </div>
                 <span className="text-2xl font-bold text-gray-800">Arlene</span>
               </Link>
-              <Link 
+              <Link
                 to="/"
                 className="px-6 py-2 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full font-medium hover:scale-105 transition-all duration-300"
               >
@@ -120,7 +150,7 @@ const FAQ = () => {
               </div>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Everything you need to know about mosaic art, my creative process, and how to start your own 
+              Everything you need to know about mosaic art, my creative process, and how to start your own
               artistic journey here in beautiful Amanzimtoti, South Africa.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto mt-6 rounded-full"></div>
@@ -133,8 +163,8 @@ const FAQ = () => {
             <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={faq.id} 
+                  <AccordionItem
+                    key={faq.id}
                     value={faq.id}
                     className="border border-blue-100 rounded-2xl px-6 bg-gradient-to-r from-blue-50/50 to-teal-50/50 hover:from-blue-50 hover:to-teal-50 transition-all duration-300"
                   >
@@ -168,17 +198,17 @@ const FAQ = () => {
                 Still Have Questions?
               </h2>
               <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                I'm always happy to chat about mosaic art, share creative tips, or help you plan your next project. 
+                I'm always happy to chat about mosaic art, share creative tips, or help you plan your next project.
                 Don't hesitate to reach out!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link 
-                  to="/#contact"
+                <Link
+                  to="/#contact" // Assuming you have a contact section on your homepage
                   className="px-8 py-3 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full font-medium hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
                   Get In Touch
                 </Link>
-                <Link 
+                <Link
                   to="/art-kits"
                   className="px-8 py-3 bg-white/50 backdrop-blur-sm border-2 border-white/70 text-gray-700 rounded-full font-medium hover:scale-105 hover:bg-white/70 transition-all duration-300"
                 >
