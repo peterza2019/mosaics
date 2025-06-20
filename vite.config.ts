@@ -1,23 +1,33 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc'; // Or your React plugin
 import path from "path";
-import { componentTagger } from "lovable-tagger";
-import sitemap from 'vite-plugin-sitemap'; // <--- Import the sitemap plugin
+import sitemap from 'vite-plugin-sitemap';
+// import { componentTagger } from "lovable-tagger"; // If you're still using this
 
-// Define your app's routes for the sitemap
+// --- Define all your application routes here ---
 // These should match the 'path' attributes in your App.tsx <Route> components
 const appRoutes = [
-  '/',
+  '/', // Your Index page
   '/showcase-gallery',
   '/art-supplies',
   '/art-kits',
   '/faq',
   '/blog',
-  // If you have individual blog post pages like /blog/my-post-slug,
-  // you'd ideally list them here too. If they are numerous or generated,
-  // you might need a more dynamic way to generate this list or ensure
-  // your /blog page links to all of them clearly so Google can crawl them.
-  // For now, listing the main sections is a great start.
+  // --- ADD ANY NEW PAGES YOU'VE CREATED HERE ---
+  // Example:
+  // '/new-page-1',
+  // '/products/cool-product',
+  // '/about-us',
+
+  // If you have many dynamic blog posts, e.g., /blog/my-post-title:
+  // You might need a more dynamic way to get these slugs if they are numerous.
+  // For a few, you can list them manually:
+  // '/blog/my-first-post',
+  // '/blog/another-great-article',
+  // Alternatively, if your /blog page clearly links to all posts,
+  // Google will likely find them via crawling, but including them in the
+  // sitemap is still best practice if feasible.
 ];
 
 export default defineConfig(({ mode }) => ({
@@ -28,23 +38,20 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     sitemap({
-      hostname: 'https://www.YOURDOMAIN.com', // <--- IMPORTANT: Replace with your actual domain
+      hostname: 'https://arlenes.co.za', // Your actual domain
       dynamicRoutes: appRoutes,
-      // Optional: if your build output directory is not 'dist'
-      // outDir: 'your-build-output-dir',
-      // Optional: to exclude specific routes
-      // exclude: ['/admin/**', '/private-page'],
-      // Optional: for pretty URLs (removes .html, usually good for SPAs)
-      // extensions: ['html'], // If you want to explicitly state which extensions to look for if it were crawling
-      // pretty: true, // This often helps with SPAs to not add .html to client-side routes
-      robots: [ // Optional: Generate a robots.txt
+      // Optional: Change frequency and priority can be set globally or per-route
+      // Google pays less attention to these now, but they don't hurt.
+      // changefreq: 'weekly',
+      // priority: 0.7,
+      // lastmod: new Date(), // Sets lastmod to the build date for all pages
+      robots: [ // Generates a robots.txt file
         { userAgent: '*', allow: '/' },
-        // Add more specific rules if needed
-        // { userAgent: 'Googlebot', disallow: '/admin' }
+        // Example: Disallow a specific path
+        // { userAgent: '*', disallow: '/admin' }
       ]
     }),
-    mode === 'development' &&
-    componentTagger(),
+    // mode === 'development' && componentTagger(), // If you're still using this
   ].filter(Boolean),
   resolve: {
     alias: {
